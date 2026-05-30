@@ -1,0 +1,195 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.tecna-bg{
+    position:fixed;
+    inset:0;
+
+    background-image:url("../imagens/fundo-tecna.png");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+
+    opacity:0.55;
+
+    filter:
+        drop-shadow(0 0 20px #ff7bff)
+        drop-shadow(0 0 40px #7b68ee)
+        drop-shadow(0 0 80px #00bfff);
+
+    z-index:-1;
+}
+
+.stars{
+    position:fixed;
+    inset:0;
+
+    background-image:
+        radial-gradient(circle, white 1px, transparent 2px),
+        radial-gradient(circle, white 2px, transparent 3px),
+        radial-gradient(circle, rgba(255,255,255,0.8) 1px, transparent 2px);
+
+    background-size:
+        120px 120px,
+        200px 200px,
+        300px 300px;
+
+    animation:piscar 4s infinite alternate;
+
+    z-index:-2;
+}
+
+@keyframes piscar{
+    0%{
+        opacity:0.5;
+    }
+
+    50%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:0.6;
+    }
+}
+
+body{
+    min-height:100vh;
+
+    font-family:'Poppins', sans-serif;
+
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255,105,180,0.25), transparent 25%),
+        radial-gradient(circle at 80% 30%, rgba(147,112,219,0.30), transparent 30%),
+        radial-gradient(circle at 50% 80%, rgba(0,191,255,0.25), transparent 25%),
+        linear-gradient(
+            135deg,
+            #0d0321 0%,
+            #1c0f47 30%,
+            #2c125d 60%,
+            #12061f 100%
+        );
+}
+
+.container{
+    width:100%;
+    max-width:1200px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+    padding-top:80px;
+}
+
+h1{
+    font-family:'Dancing Script', cursive;
+
+    font-size:5rem;
+
+    font-weight:normal;
+
+    color:#ffbdf7;
+
+    margin-bottom:5px;
+
+    text-shadow:
+        0 0 10px rgba(255,189,247,0.8),
+        0 0 25px rgba(123,104,238,0.6);
+}
+
+.subtitulo{
+    display:block;
+
+    color:#f3ddff;
+
+    font-size:18px;
+
+    margin-bottom:120px;
+
+    font-family:Georgia, serif;
+}
+
+footer{
+    position:fixed;
+
+    bottom:20px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    color:#ffffff;
+
+    font-size:14px;
+
+    font-family:Georgia, serif;
+
+    text-align:center;
+}
+
+
+.campo-selecao{
+    width:100%;
+    max-width:800px;
+
+    margin:0 auto;
+
+    padding:30px;
+
+    background:rgba(255,255,255,0.12);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:25px;
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    box-shadow:
+        0 0 20px rgba(123,104,238,0.25),
+        0 0 40px rgba(255,105,180,0.15);
+}
+
+label{
+    display:block;
+
+    margin-bottom:12px;
+
+    color:#ffd8ff;
+
+    font-size:20px;
+
+    font-family:Georgia, serif;
+}
+
+select{
+    width:100%;
+
+    padding:18px 20px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,0.80);
+
+    color:#7b2cbf;
+
+    font-size:16px;
+
+    font-family:'Poppins', sans-serif;
+
+    cursor:pointer;
+
+    outline:none;
+
+    transition:0.3s;
+}
+
+select:focus{
+    box-shadow:
+        0 0 15px rgba(255,105,180,0.5),
+        0 0 25px rgba(123,104,238,0.5);
+}
