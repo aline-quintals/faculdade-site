@@ -1,0 +1,317 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+
+    display:flex;
+
+    font-family:'Poppins', sans-serif;
+
+    background:#f8faff;
+}
+
+/* ==========================
+   SIDEBAR
+========================== */
+
+.sidebar{
+    width:280px;
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    height:100vh;
+
+    background:
+        linear-gradient(
+            180deg,
+            #eef4ff,
+            #f6eaf9
+        );
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    border-right:1px solid #dfe7f5;
+}
+
+.avatar{
+    width:160px;
+    height:160px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:5px solid white;
+
+    margin-bottom:20px;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.10);
+}
+
+.sidebar h2{
+    color:#9c40ba;
+
+    margin-bottom:10px;
+
+    font-size:1.3rem;
+}
+
+.sidebar p{
+    color:#666;
+
+    margin-bottom:8px;
+}
+
+.sidebar a{
+    text-decoration:none;
+
+    color:#9c40ba;
+
+    font-weight:600;
+}
+
+.sidebar a:hover{
+    text-decoration:underline;
+}
+
+/* ==========================
+   CONTEÚDO
+========================== */
+
+.conteudo{
+    flex:1;
+
+    margin-left:280px;
+
+    padding:50px;
+}
+
+/* ==========================
+   CABEÇALHO
+========================== */
+
+header{
+    margin-bottom:40px;
+}
+
+header h1{
+    font-family:'Dancing Script', cursive;
+
+    font-size:4rem;
+
+    color:#9c40ba;
+
+    margin-bottom:10px;
+}
+
+header span{
+    color:#666;
+
+    font-size:1rem;
+}
+
+/* ==========================
+   ACCORDION
+========================== */
+
+details{
+    background:white;
+
+    border-radius:20px;
+
+    margin-bottom:20px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.08);
+
+    transition:.3s;
+}
+
+details:hover{
+    transform:translateY(-2px);
+}
+
+summary{
+    cursor:pointer;
+
+    list-style:none;
+
+    padding:20px 25px;
+
+    font-size:1.1rem;
+
+    font-weight:600;
+
+    color:#9c40ba;
+
+    background:
+        linear-gradient(
+            90deg,
+            #eef4ff,
+            #fcf0ff
+        );
+}
+
+summary::-webkit-details-marker{
+    display:none;
+}
+
+details[open] summary{
+    border-bottom:1px solid #edf2f7;
+}
+
+/* ==========================
+   CONTEÚDO INTERNO
+========================== */
+
+.conteudo-materia{
+    padding:25px;
+}
+
+.conteudo-materia h3{
+    color:#856298;
+
+    margin-top:20px;
+    margin-bottom:15px;
+}
+
+.conteudo-materia p{
+    line-height:1.8;
+
+    color:#444;
+
+    margin-bottom:15px;
+}
+
+.conteudo-materia ul,
+.conteudo-materia ol{
+    margin-left:25px;
+
+    line-height:2;
+}
+
+.conteudo-materia li{
+    color:#444;
+}
+
+/* ==========================
+   EXEMPLOS
+========================== */
+
+pre{
+    background:#f7f9fc;
+
+    border-left:5px solid #bfabe1;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    overflow-x:auto;
+
+    margin:15px 0;
+
+    color:#444;
+}
+
+/* ==========================
+   TABELAS
+========================== */
+
+table{
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+}
+
+th{
+    background:#c365da;
+
+    color:white;
+
+    padding:12px;
+}
+
+td{
+    padding:12px;
+
+    border:1px solid #e5e7eb;
+
+    text-align:center;
+}
+
+tr:nth-child(even){
+    background:#f8faff;
+}
+
+/* ==========================
+   CAIXAS DE EXERCÍCIOS
+========================== */
+
+.exercicio{
+    background:#fff9e8;
+
+    border-left:5px solid #ffd166;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    margin-top:15px;
+}
+
+.resumo{
+    background:#f9eefc;
+
+    border-left:5px solid #eac0f7;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    margin-top:15px;
+}
+
+/* ==========================
+   RESPONSIVO
+========================== */
+
+@media(max-width:900px){
+
+    body{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        position:relative;
+
+        width:100%;
+
+        height:auto;
+    }
+
+    .conteudo{
+        margin-left:0;
+
+        padding:25px;
+    }
+
+    header h1{
+        font-size:3rem;
+    }
+
+}

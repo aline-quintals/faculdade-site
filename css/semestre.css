@@ -253,6 +253,13 @@ section h3{
 
 }
 
+.sidebar a{
+    text-decoration:none;
+
+    color:#9c40ba;
+
+    font-weight:600;
+}
 .agenda{
     background:#ffffff;
 

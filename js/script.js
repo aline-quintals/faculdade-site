@@ -1,4 +1,4 @@
-const semestre = document.getElementById("semestre");
+const semestre = document.getElementById("primeiro-semestre");
 
 semestre.addEventListener("change", () => {
 
