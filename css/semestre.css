@@ -1,0 +1,309 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+
+    display:flex;
+
+    font-family:'Poppins', sans-serif;
+
+    background:#f7f5ff;
+}
+
+/* ==========================
+   SIDEBAR
+========================== */
+
+.sidebar{
+    width:280px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #efe7ff,
+            #e7f4ff
+        );
+
+    padding:40px 25px;
+
+    text-align:center;
+
+    border-right:1px solid #ddd;
+}
+
+.avatar{
+    width:160px;
+    height:160px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:5px solid white;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.10);
+
+    margin-bottom:20px;
+}
+
+.sidebar h2{
+    color:#7b2cbf;
+
+    font-size:1.3rem;
+
+    margin-bottom:15px;
+}
+
+.sidebar p{
+    color:#666;
+
+    margin-bottom:8px;
+}
+
+/* ==========================
+   CONTEÚDO
+========================== */
+
+.conteudo{
+    flex:1;
+
+    padding:40px;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+    margin-bottom:40px;
+}
+
+header h1{
+    font-family:'Dancing Script', cursive;
+
+    font-size:4rem;
+
+    color:#9c27b0;
+}
+
+header span{
+    color:#666;
+
+    font-size:1rem;
+}
+
+/* ==========================
+   SEÇÕES
+========================== */
+
+section{
+    margin-bottom:40px;
+}
+
+section h3{
+    color:#7b2cbf;
+
+    margin-bottom:20px;
+}
+
+/* ==========================
+   CARDS DAS MATÉRIAS
+========================== */
+
+.grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap:20px;
+}
+
+.card{
+    text-decoration:none;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    color:#333;
+
+    transition:0.3s;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(123,44,191,0.20);
+}
+
+.card h4{
+    margin-top:10px;
+
+    color:#7b2cbf;
+}
+
+.card p{
+    margin-top:10px;
+
+    color:#666;
+}
+
+.card.rp{
+    background:#e8f4ff;
+}
+
+.card.mat{
+    background:#f3ecff;
+}
+
+.card.front{
+    background:#ffe8f4;
+}
+
+.card.sd{
+    background:#e8fff5;
+}
+/* ==========================
+   CURSOS E CALENDÁRIO
+========================== */
+
+.cursos,
+.calendario,
+.certificados{
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.08);
+}
+
+.cursos ul,
+.calendario ul{
+    list-style:none;
+}
+
+.cursos li,
+.calendario li{
+    padding:10px 0;
+
+    border-bottom:1px solid #eee;
+}
+
+/* ==========================
+   CERTIFICADOS
+========================== */
+
+.grid-certificados{
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap:20px;
+}
+
+.certificado{
+    background:#f3ecff;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    text-align:center;
+
+    color:#7b2cbf;
+}
+
+/* ==========================
+   RESPONSIVO
+========================== */
+
+@media(max-width:900px){
+
+    body{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+
+        border-right:none;
+
+        border-bottom:1px solid #ddd;
+    }
+
+    .conteudo{
+        padding:25px;
+    }
+
+}
+
+.agenda{
+    background:#ffffff;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* CALENDÁRIO */
+
+#calendar{
+    max-width: 750px;
+
+    margin: 20px auto;
+}
+
+.fc{
+    font-size: 0.85rem;
+}
+
+.fc-toolbar-title{
+    text-transform: capitalize;
+
+    color: #7b2cbf;
+
+    font-size: 1.4rem;
+
+    font-weight: 600;
+}
+
+.fc-button{
+    background: #b89cff !important;
+
+    border: none !important;
+}
+
+.fc-button:hover{
+    background: #9b7cff !important;
+}
+
+.fc-daygrid-event{
+    background: #20c699 !important;
+
+    border: none !important;
+
+    color: white !important;
+
+    border-radius: 8px !important;
+
+    padding: 2px 4px;
+}

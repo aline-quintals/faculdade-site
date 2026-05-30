@@ -9,3 +9,4 @@ semestre.addEventListener("change", () => {
     }
 
 });
+
