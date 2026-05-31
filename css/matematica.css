@@ -162,14 +162,33 @@ summary{
             #eef4ff,
             #fcf0ff
         );
+
+    display:flex;
+    align-items:center;
+    gap:12px;
 }
 
 summary::-webkit-details-marker{
     display:none;
 }
 
-details[open] summary{
-    border-bottom:1px solid #edf2f7;
+/* Seta */
+summary::before{
+    content:"";
+
+    width:8px;
+    height:8px;
+
+    border-right:2px solid #9c40ba;
+    border-bottom:2px solid #9c40ba;
+
+    transform:rotate(-45deg);
+
+    transition:transform .3s ease;
+}
+
+details[open] summary::before{
+    transform:rotate(45deg);
 }
 
 /* ==========================

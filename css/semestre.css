@@ -176,10 +176,9 @@ section h3{
     background:#e8fff5;
 }
 /* ==========================
-   CURSOS E CALENDÁRIO
+   CALENDÁRIO
 ========================== */
 
-.cursos,
 .calendario,
 .certificados{
     background:white;
@@ -192,12 +191,10 @@ section h3{
         0 5px 15px rgba(0,0,0,0.08);
 }
 
-.cursos ul,
 .calendario ul{
     list-style:none;
 }
 
-.cursos li,
 .calendario li{
     padding:10px 0;
 
