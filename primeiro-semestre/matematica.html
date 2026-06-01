@@ -32,395 +32,577 @@
 
     <main class="conteudo">
 
-        <header>
-            <h1>Matemática Computacional</h1>
+     <header>
+    <h1>Matemática Computacional</h1>
 
-            <span>
-                Resumos, exemplos, exercícios e revisões para prova.
-            </span>
-        </header>
+    <span>
+        Resumos, exemplos e revisão para prova.
+    </span>
+</header>
 
-        <section>
+<section>
 
-            <details>
+    <details>
 
-                <summary>📘 Revisão Matemática Básica</summary>
+        <summary>📘 Função</summary>
 
-                <div class="conteudo-materia">
+        <div class="conteudo-materia">
 
-                    <h3>Operações Fundamentais</h3>
+            <h3>Definição</h3>
 
-                    <ul>
-                        <li>Soma <strong>+</strong></li>
-                        <li>Subtração <strong>-</strong></li>
-                        <li>Multiplicação <strong>*</strong></li>
-                        <li>Divisão <strong>/</strong></li>
-                        <li>Potenciação <strong>²</strong></li>
-                        <li>Radiciação <strong>√</strong></li>
-                    </ul>
+            <p>
+                Uma função é uma relação entre dois conjuntos em que cada elemento do domínio possui apenas uma imagem.
+            </p>
 
-                    <h3>Ordem das Operações</h3>
+            <p>
+                Ela transforma valores de entrada (x) em valores de saída (y).
+            </p>
 
-                    <p>
-                        Primeiro resolvemos:
-                    </p>
+            <h3>Exemplo</h3>
 
-                    <ol>
-                        <li>Parênteses ()</li>
-                        <li>Colchetes []</li>
-                        <li>Chaves {}</li>
-                        <li>Potenciação e Radiciação</li>
-                        <li>Multiplicação e Divisão</li>
-                        <li>Soma e Subtração</li>
-                    </ol>
+            <pre>
+f(x) = x + 3
 
-                    <h3>Regra de Sinais</h3>
+x = 1 → y = 4
+x = 2 → y = 5
+x = 3 → y = 6
+            </pre>
 
-                    <ul>
-                        <li>(+) × (+) = +</li>
-                        <li>(+) × (-) = -</li>
-                        <li>(-) × (+) = -</li>
-                        <li>(-) × (-) = +</li>
-                    </ul>
+            <p>
+                Cada valor de x possui apenas um valor correspondente de y.
+            </p>
 
-                </div>
+        </div>
 
-            </details>
+    </details>
 
-        </section>
+</section>
 
-        <section>
+<section>
 
-            <details>
+    <details>
 
-                <summary>📗 Funções</summary>
+        <summary>📗 Domínio e Contradomínio</summary>
 
-                <div class="conteudo-materia">
+        <div class="conteudo-materia">
 
-                    <h3>Resumo</h3>
+            <h3>Domínio</h3>
 
-                    <p>
-                        Uma função associa cada elemento de um conjunto a apenas um elemento de outro conjunto.
-                    </p>
-                    <p>f(x)= ax + b</p>
+            <p>
+                É o conjunto dos valores de entrada da função.
+            </p>
 
-                    <h3>Exemplo</h3>
+            <pre>
+f(x) = x + 1
 
-                    <pre>
+Domínio = {1, 2, 3}
+            </pre>
 
-                    f(x) = 2x + 1
-                    f(2) = 5
-                    f(3) = 7
-                    f(4) = 9
-                    </pre>
+            <h3>Contradomínio</h3>
 
-                </div>
+            <p>
+                É o conjunto dos possíveis valores de saída.
+            </p>
 
-            </details>
+            <pre>
+f(1) = 2
+f(2) = 3
+f(3) = 4
 
-        </section>
+Contradomínio = {2, 3, 4}
+            </pre>
 
-        <section>
+            <h3>Exemplo Completo</h3>
 
-            <details>
+            <table>
 
-                <summary>📙 Domínio e Contradomínio</summary>
+                <tr>
+                    <th>(A) x</th>
+                    <th>(B) y</th>
+                </tr>
 
-                <div class="conteudo-materia">
+                <tr>
+                    <td>1</td>
+                    <td>3</td>
+                </tr>
 
-                    <h3>Variável Independente</h3>
+                <tr>
+                    <td>2</td>
+                    <td>4</td>
+                </tr>
 
-                    <p>
-                        Valor de entrada da função.
-                    </p>
+                <tr>
+                    <td>3</td>
+                    <td>5</td>
+                </tr>
 
-                    <h3>Variável Dependente</h3>
+            </table>
 
-                    <p>
-                        Resultado produzido pela função.
-                    </p>
+            <ul>
+                <li>Domínio = {1,2,3}</li>
+                <li>Contradomínio = {3,4,5}</li>
+                <li>Imagem = todos os valores gerados pela função. {3,4,5}</li>
+            </ul>
 
-                    <h3>Representação Visual</h3>
+        </div>
 
-                    <pre>
-A = {1,2,3}
+    </details>
 
-1 ─────► 2
+</section>
 
-2 ─────► 4
+<section>
 
-3 ─────► 6
+    <details>
 
-B = {2,4,6}
-                    </pre>
+        <summary>📈 Taxa de Variação</summary>
 
-                    <ul>
-                        <li>Domínio = A</li>
-                        <li>Contradomínio = B</li>
-                        <li>Imagem = {2,4,6}</li>
-                    </ul>
+        <div class="conteudo-materia">
 
-                </div>
+            <p>
+                A taxa de variação mostra quanto o valor de y varia quando x varia.
+            </p>
 
-            </details>
+            <h3>Fórmula</h3>
 
-        </section>
+            <pre>
+          y₂ - y₁
+a = ---------------
+          x₂ - x₁
+            </pre>
 
-        <section>
+            <ul>
+                <li>a = taxa de variação</li>
+            </ul>
 
-            <details>
+            <h3>Exemplo</h3>
 
-                <summary>📈 Taxa de Variação</summary>
+            <pre>
+A(1,2)
+B(3,6)
 
-                <div class="conteudo-materia">
+a = (6 - 2) / (3 - 1)
 
-                    <p>
-                        Mede quanto a variável dependente varia quando a variável independente aumenta.
-                    </p>
+a = 4 / 2
 
-                    <table>
+a = 2
+            </pre>
 
-                        <tr>
-                            <th>X</th>
-                            <th>Y</th>
-                        </tr>
+            <p>
+                Quando x aumenta 1 unidade, y aumenta 2 unidades.
+            </p>
 
-                        <tr>
-                            <td>1</td>
-                            <td>3</td>
-                        </tr>
+            <h3>Exemplo com Número Negativo</h3>
 
-                        <tr>
-                            <td>2</td>
-                            <td>5</td>
-                        </tr>
+            <pre>
+A(-2,1)
+B(4,13)
 
-                        <tr>
-                            <td>3</td>
-                            <td>7</td>
-                        </tr>
+a = (13 - 1) / (4 - (-2))
 
-                    </table>
+a = 12 / 6
 
-                </div>
+a = 2
+            </pre>
 
-            </details>
+            <p>
+                Lembre-se: menos com menos vira mais.
+            </p>
 
-        </section>
+        </div>
 
-        <section>
+    </details>
 
-            <details>
+</section>
 
-                <summary>📉 Crescente, Decrescente e Constante</summary>
+<section>
 
-                <div class="conteudo-materia">
+    <details>
 
-                    <ul>
-                        <li>Crescente → valores aumentam.</li>
-                        <li>Decrescente → valores diminuem.</li>
-                        <li>Constante → valores permanecem iguais.</li>
-                    </ul>
+        <summary>🎯 Intercepto</summary>
 
-                </div>
+        <div class="conteudo-materia">
 
-            </details>
+            <p>
+                O intercepto é o ponto onde a reta cruza o eixo y.
+            </p>
 
-        </section>
+            <pre>
+y = ax + b
 
-        <section>
+a = taxa de variação
+b = intercepto
+            </pre>
 
-            <details>
+            <h3>Exemplo</h3>
 
-                <summary>🎯 Intercepto</summary>
-
-                <div class="conteudo-materia">
-
-                    <p>
-                        O intercepto representa o ponto onde a função cruza um eixo.
-                    </p>
-
-                    <pre>
+            <pre>
 y = 2x + 3
 
-x = 0
-
-y = 3
+b = 3
 
 Intercepto = (0,3)
-                    </pre>
+            </pre>
 
-                </div>
+            <h3>Encontrando o Intercepto</h3>
 
-            </details>
+            <pre>
+Ponto (1,5)
 
-        </section>
+y = 2x + b
 
-        <section>
+5 = 2(1) + b
 
-            <details>
+b = 5 - 2
 
-                <summary>📊 Distribuição de Frequência</summary>
+b = 3
+            </pre>
 
-                <div class="conteudo-materia">
+            <p>
+                Equação final: y = 2x + 3
+            </p>
 
-                    <h3>Variáveis Qualitativas</h3>
+        </div>
 
-                    <p>Cor, estado civil, curso.</p>
+    </details>
 
-                    <h3>Variáveis Quantitativas</h3>
+</section>
 
-                    <p>Idade, peso, altura.</p>
+<section>
 
-                    <h3>Tabela de Frequência</h3>
+    <details>
 
-                    <table>
+        <summary>📊 Distribuição de Frequência</summary>
 
-                        <tr>
-                            <th>Classe</th>
-                            <th>fi</th>
-                        </tr>
+        <div class="conteudo-materia">
 
-                        <tr>
-                            <td>10 ├ 20</td>
-                            <td>5</td>
-                        </tr>
+            <p>
+                A distribuição de frequência organiza os dados em tabelas para facilitar a análise.
+            </p>
 
-                        <tr>
-                            <td>20 ├ 30</td>
-                            <td>8</td>
-                        </tr>
+            <pre>
+Dados:
 
-                    </table>
+1, 2, 2, 3, 3, 4
 
-                </div>
+Total = 6
+            </pre>
 
-            </details>
+            <h3>Frequência Absoluta (fi)</h3>
 
-        </section>
+            <table>
 
-        <section>
+                <tr>
+                    <th>Classe</th>
+                    <th>fi</th>
+                </tr>
 
-            <details>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
 
-                <summary>📈 Representações Gráficas</summary>
+                <tr>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
 
-                <div class="conteudo-materia">
+                <tr>
+                    <td>3</td>
+                    <td>2</td>
+                </tr>
 
-                    <ul>
-                        <li>Gráfico de Barras</li>
-                        <li>Histograma</li>
-                        <li>Gráfico de Setores</li>
-                    </ul>
+                <tr>
+                    <td>4</td>
+                    <td>1</td>
+                </tr>
 
-                </div>
+            </table>
 
-            </details>
+            <p>
+                Mostra quantas vezes cada valor aparece.
+            </p>
 
-        </section>
+        </div>
 
-        <section>
+    </details>
 
-            <details>
+</section>
 
-                <summary>📏 Amplitude Total</summary>
+<section>
 
-                <div class="conteudo-materia">
+    <details>
 
-                    <p>
+        <summary>📉 Frequência Relativa (fr)</summary>
 
-                        Amplitude = Maior Valor − Menor Valor
+        <div class="conteudo-materia">
 
-                    </p>
+            <h3>Fórmula</h3>
 
-                </div>
+            <pre>
+fr = fi / total
+            </pre>
 
-            </details>
+            <h3>Exemplo</h3>
 
-        </section>
+            <pre>
+Classe 2:
 
-        <section>
+fr = 2 / 6
 
-            <details>
+fr = 0,33
 
-                <summary>👥 População e Amostra</summary>
+33,3%
+            </pre>
 
-                <div class="conteudo-materia">
+            <p>
+                A soma das frequências relativas deve resultar em 100% (ou valor aproximado).
+            </p>
 
-                    <p>
-                        População = todos os elementos estudados.
-                    </p>
+        </div>
 
-                    <p>
-                        Amostra = parte da população.
-                    </p>
+    </details>
 
-                </div>
+</section>
 
-            </details>
+<section>
 
-        </section>
+    <details>
 
-        <section>
+        <summary>📚 Frequência Acumulada (Fi)</summary>
 
-            <details>
+        <div class="conteudo-materia">
 
-                <summary>📐 Variância</summary>
+            <table>
 
-                <div class="conteudo-materia">
+                <tr>
+                    <th>Classe</th>
+                    <th>fi</th>
+                    <th>Fi</th>
+                </tr>
 
-                    <p>
-                        Mede a dispersão dos dados em relação à média.
-                    </p>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
 
-                </div>
+                <tr>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
 
-            </details>
+                <tr>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>5</td>
+                </tr>
 
-        </section>
+                <tr>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>6</td>
+                </tr>
 
-        <section>
+            </table>
 
-            <details>
+            <p>
+                O último valor de Fi sempre será igual ao total de dados.
+            </p>
 
-                <summary>📏 Desvio Padrão</summary>
+        </div>
 
-                <div class="conteudo-materia">
+    </details>
 
-                    <p>
-                        Raiz quadrada da variância.
-                    </p>
+</section>
 
-                </div>
+<section>
 
-            </details>
+    <details>
 
-        </section>
+        <summary>📋 Frequência Relativa Acumulada (FRi)</summary>
 
-        <section>
+        <div class="conteudo-materia">
 
-            <details>
+            <table>
 
-                <summary>📝 Revisão para Prova</summary>
+                <tr>
+                    <th>Classe</th>
+                    <th>FRi</th>
+                </tr>
 
-                <div class="conteudo-materia">
+                <tr>
+                    <td>1</td>
+                    <td>16,7%</td>
+                </tr>
 
-                    <ul>
-                        <li>✓ Funções</li>
-                        <li>✓ Domínio e Contradomínio</li>
-                        <li>✓ Taxa de Variação</li>
-                        <li>✓ Distribuição de Frequência</li>
-                        <li>✓ Variância</li>
-                        <li>✓ Desvio Padrão</li>
-                    </ul>
+                <tr>
+                    <td>2</td>
+                    <td>50,0%</td>
+                </tr>
 
-                </div>
+                <tr>
+                    <td>3</td>
+                    <td>83,3%</td>
+                </tr>
 
-            </details>
+                <tr>
+                    <td>4</td>
+                    <td>100,0%</td>
+                </tr>
 
-        </section>
+            </table>
+
+            <p>
+                O último valor sempre será 100%.
+            </p>
+
+        </div>
+
+    </details>
+
+</section>
+
+<section>
+
+    <details>
+
+        <summary>📝 Tabela Completa de Frequências</summary>
+
+        <div class="conteudo-materia">
+
+            <table>
+
+                <tr>
+                    <th>Classe</th>
+                    <th>fi</th>
+                    <th>fr (%)</th>
+                    <th>Fi</th>
+                    <th>FRi (%)</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>16,7</td>
+                    <td>1</td>
+                    <td>16,7%</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>33,3</td>
+                    <td>3</td>
+                    <td>50,0%</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>33,3</td>
+                    <td>5</td>
+                    <td>83,3%</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>16,7</td>
+                    <td>6</td>
+                    <td>100,0%</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </details>
+
+</section>
+
+<section>
+
+    <details>
+
+        <summary>📏 Mediana</summary>
+
+        <div class="conteudo-materia">
+
+            <p>
+                A mediana é o valor central dos dados organizados em ordem crescente.
+            </p>
+
+            <h3>Quantidade Ímpar</h3>
+
+            <pre>
+2, 4, 5, 7, 9
+
+Mediana = 5
+            </pre>
+
+            <h3>Quantidade Par</h3>
+
+            <pre>
+1, 2, 2, 3, 3, 4
+
+Valores centrais:
+2 e 3
+
+(2 + 3) / 2
+
+Mediana = 2,5
+            </pre>
+
+        </div>
+
+    </details>
+
+</section>
+
+<section>
+
+    <details>
+
+        <summary>✅ Revisão para Prova</summary>
+
+        <div class="conteudo-materia">
+
+            <ul>
+                <li>✓ Função</li>
+                <li>✓ Domínio e Contradomínio</li>
+                <li>✓ Taxa de Variação</li>
+                <li>✓ Intercepto</li>
+                <li>✓ Frequência Absoluta (fi)</li>
+                <li>✓ Frequência Relativa (fr)</li>
+                <li>✓ Frequência Acumulada (Fi)</li>
+                <li>✓ Frequência Relativa Acumulada (FRi)</li>
+                <li>✓ Mediana</li>
+            </ul>
+
+        </div>
+
+    </details>
+
+</section>
+    <section class="anotacoes">
+
+    <h2>📝 Meu Caderno de Anotações</h2>
+
+    <textarea
+        id="caderno"
+        placeholder="Escreva suas anotações aqui..."
+    ></textarea>
+    <button id="limpar-anotacoes">
+    🗑 Limpar Anotações
+</button>
+
+</section>
+
+<script src="../js/anotacoes.js"></script>
 
     </main>
+
 
 </body>
 </html>
