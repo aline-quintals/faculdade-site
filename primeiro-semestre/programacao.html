@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação</title>
+
+    <link rel="stylesheet" href="../css/semestre.css">
+    <link rel="stylesheet" href="../css/programacao.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<aside class="sidebar">
+
+    <img src="../imagens/tecna.jpg" alt="Tecna" class="avatar">
+
+    <h2>Programação</h2>
+
+    <p>Professor</p>
+
+    <p>1º Semestre • 2026</p>
+
+    <br>
+
+    <a href="../primeiro-semestre/index.html">⬅ Voltar</a>
+
+</aside>
+
+<main class="conteudo">
+
+<header>
+
+    <h1>Programação</h1>
+
+    <span>
+        Resumos, exemplos e revisão para prova.
+    </span>
+
+</header>
+
+<section>
+
+    <details>
+
+        <summary>💻 Entrada, Processamento e Saída</summary>
+
+        <div class="conteudo-materia">
+
+            <h3>Conceitos</h3>
+
+            <ul>
+                <li><strong>Entrada:</strong> dados recebidos pelo programa.</li>
+                <li><strong>Processamento:</strong> operações realizadas com os dados.</li>
+                <li><strong>Saída:</strong> resultado apresentado ao usuário.</li>
+            </ul>
+
+            <h3>Exemplo</h3>
+
+            <pre>
+idade = int(input("Digite sua idade: "))
+
+idade_futura = idade + 10
+
+print(idade_futura)
+            </pre>
+
+            <p>
+                Entrada → idade
+                <br>
+                Processamento → idade + 10
+                <br>
+                Saída → resultado exibido
+            </p>
+
+        </div>
+
+    </details>
+
+</section>
+
+<section>
+
+    <details>
+
+        <summary>📦 Tipos de Dados</summary>
+
+        <div class="conteudo-materia">
+
+            <table>
+
+                <tr>
+                    <th>Tipo</th>
+                    <th>Exemplo</th>
+                </tr>
+
+                <tr>
+                    <td>int</td>
+                    <td>10</td>
+                </tr>
+
+                <tr>
+                    <td>float</td>
+                    <td>10.5</td>
+                </tr>
+
+                <tr>
+                    <td>str</td>
+                    <td>"Aline"</td>
+                </tr>
+
+                <tr>
+                    <td>bool</td>
+                    <td>True ou False</td>
+                </tr>
+
+            </table>
+
+            <h3>Exemplo</h3>
+
+            <pre>
+idade = 20
+altura = 1.65
+nome = "Maria"
+aprovado = True
+            </pre>
+
+        </div>
+
+    </details>
+
+</section>
+
+<section>
+
+    <details>
+
+        <summary>📝 Teste de Mesa</summary>
+
+        <div class="conteudo-materia">
+
+            <p>
+                Teste de mesa é a simulação manual da execução do algoritmo.
+            </p>
+
+            <h3>Exemplo</h3>
+
+            <pre>
+x = 5
+y = 3
+z = x + y
+            </pre>
+
+            <table>
+
+                <tr>
+                    <th>Variável</th>
+                    <th>Valor</th>
+                </tr>
+
+                <tr>
+                    <td>x</td>
+                    <td>5</td>
+                </tr>
+
+                <tr>
+                    <td>y</td>
+                    <td>3</td>
+                </tr>
+
+                <tr>
+                    <td>z</td>
+                    <td>8</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </details>
+
+</section>
+
+<section>
+
+    <details>
+
+        <summary>📊 Fluxograma e Python</summary>
+
+        <div class="conteudo-materia">
+
+            <p>
+                Fluxograma representa visualmente a lógica do algoritmo.
+            </p>
+
+            <h3>Fluxo</h3>
+
+            <pre>
+Início
+ ↓
+Ler número
+ ↓
+Mostrar número
+ ↓
+Fim
+            </pre>
+
+            <h3>Python</h3>
+
+            <pre>
+numero = int(input("Digite um número: "))
+
+print(numero)
+            </pre>
+
+        </div>
+
+    </details>
+
+</section>
+
+<section>
+
+    <details>
+
+        <summary>🔀 Condicionais (if, elif e else)</summary>
+
+        <div class="conteudo-materia">
+
+            <p>
+                Permitem tomar decisões.
+            </p>
+
+            <pre>
+idade = 18
+
+if idade >= 18:
+    print("Maior de idade")
+else:
+    print("Menor de idade")
+            </pre>
+
+            <h3>Condicionais Alinhadas</h3>
+
+            <pre>
+nota = 8
+
+if nota >= 9:
+    print("Ótimo")
+elif nota >= 7:
+    print("Bom")
+else:
+    print("Reprovado")
+            </pre>
+
+        </div>
+
+    </details>
+
+</section>
+
+<section>
+
+    <details>
+
+        <summary>📚 Vetores e Listas</summary>
+
+        <div class="conteudo-materia">
+
+            <p>
+                Vetores (listas em Python) armazenam vários valores em uma única variável.
+            </p>
+
+            <pre>
+nomes = ["Ana", "Carlos", "Pedro"]
+
+print(nomes[0])
+            </pre>
+
+            <p>
+                Resultado: Ana
+            </p>
+
+            <h3>Percorrendo Lista</h3>
+
+            <pre>
+for nome in nomes:
+    print(nome)
+            </pre>
+
+        </div>
+
+    </details>
+
+</section>
+
+<section>
+
+    <details>
+
+        <summary>🔄 Laços de Repetição</summary>
+
+        <div class="conteudo-materia">
+
+            <h3>While</h3>
+
+            <p>
+                Executa enquanto a condição for verdadeira.
+            </p>
+
+            <pre>
+contador = 1
+
+while contador <= 5:
+    print(contador)
+    contador += 1
+            </pre>
+
+            <h3>For</h3>
+
+            <p>
+                Utilizado quando sabemos quantas vezes repetir.
+            </p>
+
+            <pre>
+for i in range(1, 6):
+    print(i)
+            </pre>
+
+        </div>
+
+    </details>
+
+</section>
+
+<section>
+
+    <details>
+
+        <summary>⚖️ Diferença entre While e For</summary>
+
+        <div class="conteudo-materia">
+
+            <table>
+
+                <tr>
+                    <th>While</th>
+                    <th>For</th>
+                </tr>
+
+                <tr>
+                    <td>Quantidade indefinida</td>
+                    <td>Quantidade definida</td>
+                </tr>
+
+                <tr>
+                    <td>Baseado em condição</td>
+                    <td>Baseado em sequência</td>
+                </tr>
+
+                <tr>
+                    <td>Pode gerar loop infinito</td>
+                    <td>Mais seguro</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </details>
+
+</section>
+
+<section>
+
+    <details>
+
+        <summary>✅ Álgebra Booleana e Tabela Verdade</summary>
+
+        <div class="conteudo-materia">
+
+            <h3>Operadores</h3>
+
+            <ul>
+                <li>and → E</li>
+                <li>or → OU</li>
+                <li>not → NÃO</li>
+            </ul>
+
+            <table>
+
+                <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>A and B</th>
+                </tr>
+
+                <tr>
+                    <td>V</td>
+                    <td>V</td>
+                    <td>V</td>
+                </tr>
+
+                <tr>
+                    <td>V</td>
+                    <td>F</td>
+                    <td>F</td>
+                </tr>
+
+                <tr>
+                    <td>F</td>
+                    <td>V</td>
+                    <td>F</td>
+                </tr>
+
+                <tr>
+                    <td>F</td>
+                    <td>F</td>
+                    <td>F</td>
+                </tr>
+
+            </table>
+
+            <h3>Exemplo</h3>
+
+            <pre>
+idade = 20
+tem_carteira = True
+
+if idade >= 18 and tem_carteira:
+    print("Pode dirigir")
+            </pre>
+
+        </div>
+
+    </details>
+
+</section>
+
+<section>
+
+    <details>
+
+        <summary>🚀 Desenvolvimento de Algoritmos</summary>
+
+        <div class="conteudo-materia">
+
+            <h3>Exemplo de Regra de Negócio</h3>
+
+            <p>
+                Aprovar aluno com nota maior ou igual a 7.
+            </p>
+
+            <pre>
+nota = float(input("Digite a nota: "))
+
+if nota >= 7:
+    print("Aprovado")
+else:
+    print("Reprovado")
+            </pre>
+
+            <p>
+                O algoritmo utiliza:
+            </p>
+
+            <ul>
+                <li>Entrada de dados</li>
+                <li>Condicional</li>
+                <li>Processamento</li>
+                <li>Saída</li>
+            </ul>
+
+        </div>
+
+    </details>
+
+</section>
+
+<section>
+
+    <details>
+
+        <summary>📌 Revisão para Prova</summary>
+
+        <div class="conteudo-materia">
+
+            <ul>
+                <li>✓ Entrada, Processamento e Saída</li>
+                <li>✓ Tipos de Dados</li>
+                <li>✓ Teste de Mesa</li>
+                <li>✓ Fluxogramas</li>
+                <li>✓ Condicionais</li>
+                <li>✓ Condicionais Alinhadas</li>
+                <li>✓ Vetores (Listas)</li>
+                <li>✓ While</li>
+                <li>✓ For</li>
+                <li>✓ Álgebra Booleana</li>
+                <li>✓ Desenvolvimento de Algoritmos</li>
+            </ul>
+
+        </div>
+
+    </details>
+
+</section>
+
+<section class="anotacoes">
+
+    <h2>📝 Meu Caderno de Anotações</h2>
+
+    <textarea
+        id="caderno"
+        placeholder="Escreva suas anotações aqui..."
+    ></textarea>
+
+    <button id="limpar-anotacoes">
+        🗑 Limpar Anotações
+    </button>
+
+</section>
+
+<script src="../js/anotacoes.js"></script>
+
+</main>
+
+</body>
+</html>
